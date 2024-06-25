@@ -1,4 +1,4 @@
-resource "aws_vpc_endpoint" "ec2" {
+resource "aws_vpc_endpoint" "secretsmanager" {
   vpc_id            = aws_default_vpc.vpcTechChallenge.id
   service_name      = "com.amazonaws.us-east-1.secretsmanager"
   vpc_endpoint_type = "Interface"
