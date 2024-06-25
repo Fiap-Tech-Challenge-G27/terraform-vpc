@@ -7,5 +7,9 @@ resource "aws_vpc_endpoint" "ec2" {
     "sg-057fe6da91359a364",
   ]
 
+  subnet_ids = [
+    aws_default_subnet.subnetTechChallenge.id, aws_default_subnet.subnetTechChallenge2.id
+  ]
+
   private_dns_enabled = true
 }
